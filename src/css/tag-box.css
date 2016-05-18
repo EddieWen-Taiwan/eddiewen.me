@@ -3,10 +3,11 @@
 	margin: 0px auto;
 	margin-top: 20px;
 	opacity: 0;
-}
 
-.tag-box.-show {
-	opacity: 1;
+	-webkit-animation-name: tagsFadeIn;
+			animation-name: tagsFadeIn;
+	-webkit-animation-duration: 2.5s;
+			animation-duration: 2.5s;
 }
 
 .tag-box > span {
