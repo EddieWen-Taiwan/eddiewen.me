@@ -1,4 +1,4 @@
 require('css/reset.css');
-require('css/main.css');
+require('css/first-window.css');
 
 import $ from 'jquery';
