@@ -51,7 +51,7 @@ body {
 	overflow: hidden;
 }
 
-.v-mid {
+._v-mid {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -moz-box;
