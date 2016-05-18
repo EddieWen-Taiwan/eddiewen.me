@@ -1,4 +1,5 @@
-require('css/reset.css');
-require('css/first-window.css');
+require('css/reset');
+require('css/first-window');
+require('css/name-wrapper');
 
 import $ from 'jquery';
