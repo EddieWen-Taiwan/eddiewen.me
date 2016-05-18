@@ -1,0 +1,31 @@
+.tag-box {
+	width: 55%;
+	margin: 0px auto;
+	margin-top: 20px;
+	opacity: 0;
+}
+
+.tag-box.-show {
+	opacity: 1;
+}
+
+.tag-box > span {
+	color: #A0A0A0;
+}
+
+.tag-box > .tag {
+	color: #707070;
+	letter-spacing: 1px;
+}
+
+.tag-box > .tag::before {
+	content: "#";
+}
+
+.tag-box > .tag::after {
+	content: " / ";
+}
+
+.tag-box > .tag:last-child::after {
+	content: "";
+}
