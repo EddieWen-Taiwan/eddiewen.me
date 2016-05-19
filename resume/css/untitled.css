@@ -1,0 +1,177 @@
+body {
+	
+}
+
+/* ---------------------------- *\
+			9 6 0 p x
+\* ---------------------------- */
+
+@media screen and ( max-width: 960px ) {
+
+	#name-wrapper .my_name {
+		font-size: 80px;
+	}
+
+	.section .content {
+		width: 78%;
+	}
+
+	.section .content #who_i_am .conclusion {
+		margin-top: 70px;
+	}
+
+	.section .content #who_i_am .per {
+		height: 60px;
+	}
+
+	.section .content .period_wrapper {
+		width: 100%;
+	}
+
+	.banner .text {
+		width: 40%;
+		margin-right: 5%;
+	}
+
+	.section .grid-wrapper {
+		width: 90%;
+	}
+
+	.section .grid .real-grid .hey_bu {
+		opacity: 1;
+		height: 20%;
+		top: auto;
+		bottom: 0px;
+	}
+
+	.section .grid .real-grid:hover img {
+		width: 100%;
+		height: 100%;
+		margin-top: 0px;
+		margin-left: 0px;
+		-webkit-transform: rotate(0deg);
+		   -moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			 -o-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+
+	.section .grid .real-grid:hover .fake_border.top,
+	.section .grid .real-grid:hover .fake_border.bottom,
+	.section .grid .real-grid:hover .fake_border.right,
+	.section .grid .real-grid:hover .fake_border.left {
+		width: 0px;
+		height: 0px;
+	}
+
+	footer .link {
+		background-color: #c0c0c0;
+	}
+
+	footer .link.fb:hover,
+	footer .link.pinterest:hover,
+	footer .link.github:hover,
+	footer .link.mail:hover {
+		background-color: #c0c0c0;
+	}
+
+}
+
+
+
+/* ---------------------------- *\
+			7 2 0 p x
+\* ---------------------------- */
+
+@media screen and ( max-width: 720px ) {
+
+	#name-wrapper {
+		width: 80%;
+	}
+
+	#name-wrapper .my_name {
+		font-size: 60px;
+	}
+
+	#name-wrapper .tag-box {
+		width: 75%;
+	}
+
+	.banner .text {
+		width: 50%;
+	}
+
+	.banner.fixed {
+		background-attachment: initial;
+	}
+
+	.section .title {
+		width: 76%;
+	}
+
+	.section .content {
+		width: 90%;
+	}
+
+	.section .content .subtitle {
+		width: 60%;
+	}
+
+	.section .grid {
+		width: 50%;
+	}
+
+}
+
+
+
+/* ---------------------------- *\
+			4 8 0 p x
+\* ---------------------------- */
+
+@media screen and ( max-width: 480px ) {
+
+	.f-left {
+		float: none;
+	}
+
+	#name-wrapper .my_name {
+		font-size: 40px;
+	}
+
+	#name-wrapper .tag-box {
+		width: 95%;
+	}
+
+	.section .content {
+		width: 94%;
+	}
+
+	.section .content .subtitle {
+		width: 88%;
+	}
+
+	.section .content #who_i_am .per {
+		width: 90%;
+		margin-top: 60px;
+	}
+
+	.section .content .period .think {
+		margin-left: 0px;
+	}
+
+	.section .content .thinking {
+		width: 90%;
+	}
+
+	.banner .text {
+		width: 90%;
+		margin: 0px auto;
+	}
+
+	.section .grid {
+		width: 100%;
+	}
+
+}
+
