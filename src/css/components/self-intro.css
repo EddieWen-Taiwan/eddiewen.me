@@ -1,6 +1,9 @@
 .self-intro {
-	width: 66%;
 	margin: 0px auto;
+}
+
+.content-width > .self-intro {
+	width: 100%;
 }
 
 .self-intro > .per {
