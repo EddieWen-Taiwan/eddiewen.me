@@ -1,4 +1,29 @@
 {
+  "name": "eddiewen.me",
+  "version": "2.1.0",
+  "description": "This is my personal website. http://eddiewen.me",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --process --colors --content-base build/",
+    "build": "webpack -p --config webpack.config.build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddieWen-Taiwan/eddiewen.me.git"
+  },
+  "keywords": [
+    "eddie",
+    "wen",
+    "eddiewen.me",
+    "personal",
+    "website"
+  ],
+  "author": "Eddie Wen <m20021991y@gmail.com> (http://eddiewen.me)",
+  "bugs": {
+    "url": "https://github.com/EddieWen-Taiwan/eddiewen.me/issues"
+  },
+  "homepage": "https://github.com/EddieWen-Taiwan/eddiewen.me#readme",
   "dependencies": {
     "jquery": "^2.2.3"
   },
@@ -10,9 +35,5 @@
     "file-loader": "^0.8.5",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0"
-  },
-  "scripts": {
-    "dev": "webpack-dev-server --devtool eval --process --colors --content-base build/",
-    "build": "webpack -p --config webpack.config.build.js"
   }
 }
