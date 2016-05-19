@@ -35,3 +35,33 @@ $(document).ready( () => {
 	}
 
 });
+
+$(window).load( () => {
+
+	const windowH = $(window).height();
+
+	const about_top = $('.white-section.-about').offset().top;
+	const quote_top = $('.white-section.-about .quote-wrapper').offset().top;
+	// const portfolio_top = $('.white-section#portfolio').offset().top;
+
+	$(window).scroll( () => {
+
+		let scrollNow = $(window).scrollTop();
+
+		$('.first-window > .arrow').css( 'opacity', ( scrollNow >= windowH *0.5 ) ? '0' : '1' );
+
+		if( !$('.white-section.-about > .section-title').hasClass('-show') && scrollNow >= about_top - windowH *0.6 ) {
+			$('.white-section.-about > .section-title').addClass('-show');
+		}
+
+		if( !$('.white-section.-about > .quote-wrapper').hasClass('-show') && scrollNow >= quote_top - windowH *0.6 ) {
+			$('.white-section.-about > .quote-wrapper').addClass('-show _animated bounceInRight');
+		}
+
+		// if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {
+		// 	$('.white-section.-portfolio > .section-title').addClass('-show');
+		// }
+
+	});
+
+});
