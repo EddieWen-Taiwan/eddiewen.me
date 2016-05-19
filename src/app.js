@@ -1,13 +1,10 @@
-require('css/reset');
-
-require('css/first-window');
-require('css/name-wrapper');
-require('css/tag-box');
-require('css/pic-banner');
-require('css/white-section');
-require('css/section-title');
-
-require('css/helpers');
+/**
+ * require 'css/*.css'
+ */
+var req = require.context("css", true, /^(.*\.(css$))[^.]*$/igm);
+req.keys().forEach(function(key){
+    req(key);
+});
 
 import $ from 'jquery';
 
