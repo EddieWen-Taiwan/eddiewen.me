@@ -44,7 +44,7 @@ $(window).load( () => {
 
 	const about_top = $('.white-section.-about').offset().top;
 	const quote_top = $('.white-section.-about .quote-wrapper').offset().top;
-	// const portfolio_top = $('.white-section#portfolio').offset().top;
+	const portfolio_top = $('.white-section.-portfolio').offset().top;
 
 	$(window).scroll( () => {
 
@@ -60,9 +60,9 @@ $(window).load( () => {
 			$('.white-section.-about > .quote-wrapper').addClass('_animated bounceInRight');
 		}
 
-		// if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {
-		// 	$('.white-section.-portfolio > .section-title').addClass('-show');
-		// }
+		if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {
+			$('.white-section.-portfolio > .section-title').addClass('-show');
+		}
 
 	});
 
