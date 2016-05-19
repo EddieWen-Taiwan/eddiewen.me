@@ -10,4 +10,11 @@ import $ from 'jquery';
 
 $(document).ready( () => {
 
+	$('.first-window > .arrow').on( 'click', () => {
+		const windowH = $(window).height();
+		$('body').animate({
+			scrollTop: windowH+300
+		}, 1000);
+	});
+
 });
