@@ -1,0 +1,27 @@
+.quote-wrapper {
+	width: 66%;
+	margin: 0px auto;
+	margin-bottom: 200px;
+	opacity: 0;
+
+	-webkit-animation-duration: .7s;
+			animation-duration: .7s;
+}
+
+.quote-wrapper > .quote {
+	font-size: 20px;
+	color: #707070;
+}
+
+.quote-wrapper > .quote > i {
+	font-size: 36px;
+	margin-right: 20px;
+	color: #EA526F;
+}
+
+.quote-wrapper > .thinking {
+	width: 80%;
+	margin: 50px auto;
+	letter-spacing: 1px;
+	line-height: 30px;
+}

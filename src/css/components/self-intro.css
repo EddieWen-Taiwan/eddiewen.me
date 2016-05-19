@@ -1,0 +1,27 @@
+.self-intro {
+	width: 66%;
+	margin: 0px auto;
+}
+
+.self-intro > .per {
+	width: 40%;
+	margin: 100px 5% 0px 5%;
+	letter-spacing: 3px;
+	color: #303030;
+}
+
+.self-intro > .conclusion {
+	margin-top: 100px;
+	letter-spacing: 3px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #333333;
+}
+
+.self-intro > .conclusion.-head {
+	text-align: left;
+}
+
+.self-intro > .conclusion.-end {
+	text-align: right;
+}

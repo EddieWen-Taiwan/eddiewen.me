@@ -1,0 +1,25 @@
+.period-wrapper {
+	width: 50%;
+	margin: 0px auto;
+}
+
+.period-wrapper > .time-period {
+	margin: 100px 0px;
+}
+
+.time-period > .time {
+	font-size: 20px;
+	color: #333333;
+	margin-bottom: 15px;
+}
+
+.time-period > .time::before {
+	content: "# ";
+}
+
+.time-period > .think {
+	color: #666666;
+	letter-spacing: 1px;
+	line-height: 24px;
+	margin-left: 30px;
+}
