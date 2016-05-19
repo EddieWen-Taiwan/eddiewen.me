@@ -7,6 +7,7 @@ req.keys().forEach(function(key){
     req(key);
 });
 require('css/helpers');
+require('css/responsive');
 
 import $ from 'jquery';
 
