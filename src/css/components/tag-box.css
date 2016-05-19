@@ -1,7 +1,6 @@
 .tag-box {
 	margin: 0px auto;
 	margin-top: 20px;
-	opacity: 0;
 
 	-webkit-animation-name: tagsFadeIn;
 			animation-name: tagsFadeIn;
