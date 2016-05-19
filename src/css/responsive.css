@@ -8,6 +8,10 @@
 		font-size: 80px;
 	}
 
+	.white-section > .content-width {
+		width: 78%;
+	}
+
 	.self-intro > .conclusion {
 		margin-top: 70px;
 	}
@@ -81,7 +85,7 @@
 		font-size: 60px;
 	}
 
-	.tag-box {
+	.name-wrapper > .tag-box {
 		width: 75%;
 	}
 
@@ -97,15 +101,15 @@
 		width: 76%;
 	}
 
-	.section .content {
+	.white-section > .content-width {
 		width: 90%;
 	}
 
-	.section .content .subtitle {
+	.content-width > .sub-title {
 		width: 60%;
 	}
 
-	.section .grid {
+	.grid-wrapper > .per-grid {
 		width: 50%;
 	}
 
@@ -119,45 +123,45 @@
 
 @media screen and ( max-width: 480px ) {
 
-	.f-left {
+	._f-left {
 		float: none;
 	}
 
-	#name-wrapper .my_name {
+	.name-wrapper > .myname {
 		font-size: 40px;
 	}
 
-	#name-wrapper .tag-box {
+	.name-wrapper > .tag-box {
 		width: 95%;
 	}
 
-	.section .content {
+	.white-section > .content-width {
 		width: 94%;
 	}
 
-	.section .content .subtitle {
+	.content-width > .sub-title {
 		width: 88%;
 	}
 
-	.section .content #who_i_am .per {
+	.self-intro > .per {
 		width: 90%;
 		margin-top: 60px;
 	}
 
-	.section .content .period .think {
+	.time-period > .think {
 		margin-left: 0px;
 	}
 
-	.section .content .thinking {
+	.quote-wrapper > .thinking {
 		width: 90%;
 	}
 
-	.banner .text {
+	.pic-banner > .text {
 		width: 90%;
 		margin: 0px auto;
 	}
 
-	.section .grid {
+	.grid-wrapper > .per-grid {
 		width: 100%;
 	}
 

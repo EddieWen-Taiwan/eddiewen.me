@@ -1,13 +1,16 @@
 .tag-box {
-	width: 55%;
 	margin: 0px auto;
-	margin-top: 20px;
 	opacity: 0;
 
 	-webkit-animation-name: tagsFadeIn;
 			animation-name: tagsFadeIn;
 	-webkit-animation-duration: 2.5s;
 			animation-duration: 2.5s;
+}
+
+.name-wrapper > .tag-box {
+	width: 55%;
+	margin-top: 20px;
 }
 
 .tag-box > span {
