@@ -67,6 +67,7 @@
 				transform: translate3d(-5px, 0, 0);
 	}
 	to {
+		opacity: 1;
 		-webkit-transform: none;
 				transform: none;
 	}
@@ -96,6 +97,7 @@
 				transform: translate3d(-5px, 0, 0);
 	}
 	to {
+		opacity: 1;
 		-webkit-transform: none;
 				transform: none;
 	}

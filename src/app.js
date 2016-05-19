@@ -1,10 +1,12 @@
+require('css/reset');
 /**
  * require 'css/*.css'
  */
-var req = require.context("css", true, /^(.*\.(css$))[^.]*$/igm);
+var req = require.context("css/components", true, /^(.*\.(css$))[^.]*$/igm);
 req.keys().forEach(function(key){
     req(key);
 });
+require('css/helpers');
 
 import $ from 'jquery';
 
@@ -54,8 +56,8 @@ $(window).load( () => {
 			$('.white-section.-about > .section-title').addClass('-show');
 		}
 
-		if( !$('.white-section.-about > .quote-wrapper').hasClass('-show') && scrollNow >= quote_top - windowH *0.6 ) {
-			$('.white-section.-about > .quote-wrapper').addClass('-show _animated bounceInRight');
+		if( !$('.white-section.-about > .quote-wrapper').hasClass('bounceInRight') && scrollNow >= quote_top - windowH *0.6 ) {
+			$('.white-section.-about > .quote-wrapper').addClass('_animated bounceInRight');
 		}
 
 		// if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {

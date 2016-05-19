@@ -4,13 +4,8 @@
 	margin-bottom: 200px;
 	opacity: 0;
 
-	/*transition: opacity 0.7s;*/
-	-webkit-animation-duration: 1s;
-			animation-duration: 1s;
-}
-
-.quote-wrapper.-show {
-	opacity: 1;
+	-webkit-animation-duration: .7s;
+			animation-duration: .7s;
 }
 
 .quote-wrapper > .quote {
