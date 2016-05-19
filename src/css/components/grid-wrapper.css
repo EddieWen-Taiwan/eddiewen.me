@@ -30,10 +30,7 @@
 	left: 0px;
 	opacity: 0;
 
-	-webkit-transition: all 0.7s;
-	   -moz-transition: all 0.7s;
-	     -o-transition: all 0.7s;
-			transition: all 0.7s;
+	transition: all 0.7s;
 }
 
 .per-grid > .realgrid:hover .hey_bu {
@@ -53,10 +50,7 @@
 	position: absolute;
 	background-color: #4074A3;
 
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-			transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .per-grid > .realgrid .fakeborder.-top {
@@ -111,7 +105,9 @@
 	background-position: -20px -20px;
 	background-size: 720px 720px;
 
-	transform: rotate(3deg);
+	-webkit-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+			transform: rotate(3deg);
 }
 
 .per-grid:nth-child(2) > .realgrid .img {

@@ -20,7 +20,7 @@
 		height: 60px;
 	}
 
-	.period-wrapper {
+	.content-width > .period-wrapper {
 		width: 100%;
 	}
 
@@ -45,10 +45,10 @@
 		height: 100%;
 		margin-top: 0px;
 		margin-left: 0px;
+		background-size: 600px 600px;
+
 		-webkit-transform: rotate(0deg);
-		   -moz-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
-			 -o-transform: rotate(0deg);
 				transform: rotate(0deg);
 	}
 
