@@ -57,8 +57,8 @@ $(window).load( () => {
 			$('.white-section.-about > .section-title').addClass('-show');
 		}
 
-		if( !$('.white-section.-about > .quote-wrapper').hasClass('bounceInRight') && scrollNow >= quote_top - windowH *0.6 ) {
-			$('.white-section.-about > .quote-wrapper').addClass('_animated bounceInRight');
+		if( !$('.white-section.-about .quote-wrapper').hasClass('bounceInRight') && scrollNow >= quote_top - windowH *0.6 ) {
+			$('.white-section.-about .quote-wrapper').addClass('_animated bounceInRight');
 		}
 
 		if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {
