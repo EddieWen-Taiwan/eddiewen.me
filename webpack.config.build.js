@@ -12,7 +12,8 @@ module.exports = {
 		loaders: [
 			{ test: /\.js$/, include: /src/, loader: 'babel-loader' },
 			{ test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader') },
-			{ test: /\.(png|jpg)$/, loader: 'file-loader', query: 'name=img/[hash:7].[ext]' }
+			{ test: /\.(png|jpg)$/, loader: 'file-loader', query: 'name=img/[hash:7].[ext]' },
+			{ test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' }
 		]
 	},
 	resolve: {
