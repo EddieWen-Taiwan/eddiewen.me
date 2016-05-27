@@ -28,6 +28,7 @@ $(document).ready( () => {
 	 * calculate how many days remains
 	 * delete this after 2016/05/27
 	 */
+	/*
 	const today = new Date();
 	const FINAL_DAY = new Date('2016/05/27');
 	const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -36,6 +37,7 @@ $(document).ready( () => {
 	if( damnDayLeft > 0 ) {
 		$('.damn').text(`還有 ${Math.floor(damnDayLeft+1)} 天登出`);
 	}
+	 */
 
 });
 
