@@ -12,7 +12,7 @@
 
 .time-period > .time {
 	font-size: 20px;
-	color: #333333;
+	color: #333;
 	margin-bottom: 15px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .time-period > .think {
-	color: #666666;
+	color: #666;
 	letter-spacing: 1px;
 	line-height: 24px;
 	margin-left: 30px;

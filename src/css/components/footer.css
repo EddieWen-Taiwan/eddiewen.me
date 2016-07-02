@@ -18,7 +18,7 @@ footer {
 }
 
 .link-wrapper .link.-github:hover {
-	background-color: #000000;
+	background-color: #000;
 }
 
 .link-wrapper .link.-medium:hover {
@@ -36,13 +36,13 @@ footer {
 
 footer > .mail {
 	font-size: 12px;
-	color: #999999;
+	color: #999;
 	text-align: center;
 }
 
 footer > .copyright {
 	font-size: 12px;
-	color: #999999;
+	color: #999;
 	text-align: center;
 	margin-top: 70px;
 	margin-bottom: 10px;
