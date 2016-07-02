@@ -10,7 +10,7 @@ footer {
 	padding: 10px 0px;
 	text-align: center;
 
-	transition: all 0.5s;
+	transition: all .5s;
 }
 
 .link-wrapper .link.-pinterest:hover {

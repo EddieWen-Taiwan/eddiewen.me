@@ -1,7 +1,7 @@
 .grid-wrapper {
 	width: 66%;
 	max-width: 850px;
-	margin: 80px auto 200px auto;
+	margin: 80px auto 200px;
 }
 
 .grid-wrapper > .per-grid {
@@ -24,13 +24,13 @@
 .per-grid > .realgrid .hey_bu {
 	width: 200px;
 	height: 100%;
-	background-color: rgba( 0, 0, 0, 0.75 );
+	background-color: rgba( 0, 0, 0, .75 );
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	opacity: 0;
 
-	transition: all 0.7s;
+	transition: all .7s;
 }
 
 .per-grid > .realgrid:hover .hey_bu {
@@ -50,7 +50,7 @@
 	position: absolute;
 	background-color: #4074A3;
 
-	transition: all 0.3s;
+	transition: all .3s;
 }
 
 .per-grid > .realgrid .fakeborder.-top {
@@ -98,7 +98,7 @@
 	background-position: 0px 0px;
 	background-size: 600px 600px;
 
-	transition: all 0.5s;
+	transition: all .5s;
 }
 
 .per-grid > .realgrid:hover .img {
