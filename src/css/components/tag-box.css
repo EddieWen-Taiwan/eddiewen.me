@@ -3,9 +3,9 @@
 	margin-top: 20px;
 
 	-webkit-animation-name: tagsFadeIn;
-			animation-name: tagsFadeIn;
+	animation-name: tagsFadeIn;
 	-webkit-animation-duration: 2.5s;
-			animation-duration: 2.5s;
+	animation-duration: 2.5s;
 }
 
 .name-wrapper > .tag-box {

@@ -6,7 +6,7 @@
 
 .grid-wrapper > .per-grid {
 	width: 33.3%;
-	height: 200px;	
+	height: 200px;
 }
 
 .per-grid {
@@ -106,8 +106,8 @@
 	background-size: 720px 720px;
 
 	-webkit-transform: rotate(3deg);
-		-ms-transform: rotate(3deg);
-			transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform: rotate(3deg);
 }
 
 .per-grid:nth-child(2) > .realgrid .img {

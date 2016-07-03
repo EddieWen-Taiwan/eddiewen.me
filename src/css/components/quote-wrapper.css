@@ -2,7 +2,7 @@
 	opacity: 0;
 
 	-webkit-animation-duration: .7s;
-			animation-duration: .7s;
+	animation-duration: .7s;
 }
 
 .quote-wrapper > .quote {
