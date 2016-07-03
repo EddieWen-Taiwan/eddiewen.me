@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --devtool eval --process --colors --content-base build/",
-    "build": "webpack -p --config webpack.config.build.js"
+    "build": "webpack -p --config webpack.config.build.js",
+    "lint": "stylelint src/css/*.css src/css/**/*.css"
   },
   "repository": {
     "type": "git",
