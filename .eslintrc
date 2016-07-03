@@ -1,12 +1,8 @@
 {
 	"extends": "airbnb",
-	"settings": {
-		"import/extensions": [".js", ".css"],
-		"import/resolver": {
-			"node": {
-				"extensions": [".js", ".jsx", ".css"]
-			}
-		}
+	"env": {
+		"browser": true,
+		"es6": true
 	},
 	"rules": {
 		"comma-dangle": [2, "always-multiline"],
@@ -15,6 +11,7 @@
 			"from": { "after": true }
 		} }],
 		"padded-blocks": [2, { "blocks": "always", "switches": "never" }],
-		"space-in-parens": [0, "never"]
+		"space-in-parens": [0, "never"],
+		"import/no-unresolved": [0]
 	}
 }

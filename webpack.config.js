@@ -9,6 +9,9 @@ module.exports = {
 		filename: 'bundle.min.js'
 	},
 	module: {
+		preLoaders: [
+			{ test: /\.js$/, include: /src/, loader: 'eslint-loader' }
+		],
 		loaders: [
 			{ test: /\.js$/, include: /src/, loader: 'babel-loader' },
 			{ test: /\.css$/, loader: 'style-loader!css-loader' },
@@ -25,5 +28,8 @@ module.exports = {
 		new styleLintPlugin({
 			files: 'src/css/**/*.css'
 		})
-	]
+	],
+	eslint: {
+		configFile: '.eslintrc'
+	}
 }
