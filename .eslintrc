@@ -1,3 +1,20 @@
 {
-	"extends": "airbnb"
+	"extends": "airbnb",
+	"settings": {
+		"import/extensions": [".js", ".css"],
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".css"]
+			}
+		}
+	},
+	"rules": {
+		"comma-dangle": [2, "always-multiline"],
+		"indent": [2, "tab", { "SwitchCase": 1 }],
+		"keyword-spacing": ["error", { "after": false, "overrides": {
+			"from": { "after": true }
+		} }],
+		"padded-blocks": [2, { "blocks": "always", "switches": "never" }],
+		"space-in-parens": [0, "never"]
+	}
 }

@@ -2,9 +2,11 @@ require('css/reset');
 /**
  * require 'css/*.css'
  */
-var req = require.context("css/components", true, /^(.*\.(css$))[^.]*$/igm);
-req.keys().forEach(function(key){
-    req(key);
+const req = require.context('css/components', true, /^(.*\.(css$))[^.]*$/igm);
+req.keys().forEach( (key) => {
+
+	req(key);
+
 });
 require('css/animate');
 require('css/font-awesome');
@@ -19,12 +21,12 @@ $(document).ready( () => {
 	 * move screen after pressing .arrow
 	 */
 	$('.first-window > .arrow').on( 'click', () => {
+
 		$('body').animate({
-			scrollTop: $(window).height()+300
+			scrollTop: $(window).height() + 300,
 		}, 1000);
+
 	});
-
-
 
 	/**
 	 * calculate how many days remains
@@ -47,26 +49,35 @@ $(window).load( () => {
 
 	const windowH = $(window).height();
 
-	const about_top = $('.white-section.-about').offset().top;
-	const quote_top = $('.white-section.-about .quote-wrapper').offset().top;
-	const portfolio_top = $('.white-section.-portfolio').offset().top;
+	const aboutTop = $('.white-section.-about').offset().top;
+	const quoteTop = $('.white-section.-about .quote-wrapper').offset().top;
+	const portfolioTop = $('.white-section.-portfolio').offset().top;
 
 	$(window).scroll( () => {
 
-		let scrollNow = $(window).scrollTop();
+		const scrollNow = $(window).scrollTop();
 
-		$('.first-window > .arrow').css( 'opacity', ( scrollNow >= windowH *0.5 ) ? '0' : '1' );
+		$('.first-window > .arrow').css( 'opacity', ( scrollNow >= windowH * 0.5 ) ? '0' : '1' );
 
-		if( !$('.white-section.-about > .section-title').hasClass('-show') && scrollNow >= about_top - windowH *0.6 ) {
+		if( !$('.white-section.-about > .section-title').hasClass('-show')
+			&& scrollNow >= aboutTop - windowH * 0.6 ) {
+
 			$('.white-section.-about > .section-title').addClass('-show');
+
 		}
 
-		if( !$('.white-section.-about .quote-wrapper').hasClass('bounceInRight') && scrollNow >= quote_top - windowH *0.6 ) {
+		if( !$('.white-section.-about .quote-wrapper').hasClass('bounceInRight')
+			&& scrollNow >= quoteTop - windowH * 0.6 ) {
+
 			$('.white-section.-about .quote-wrapper').addClass('_animated bounceInRight');
+
 		}
 
-		if( !$('.white-section.-portfolio > .section-title').hasClass('-show') && scrollNow >= portfolio_top - windowH *0.6 ) {
+		if( !$('.white-section.-portfolio > .section-title').hasClass('-show')
+			&& scrollNow >= portfolioTop - windowH * 0.6 ) {
+
 			$('.white-section.-portfolio > .section-title').addClass('-show');
+
 		}
 
 	});
