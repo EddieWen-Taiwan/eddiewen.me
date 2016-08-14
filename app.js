@@ -8,20 +8,7 @@ import 'css/font-awesome';
 import 'css/helpers';
 import 'css/responsive';
 
-import $ from 'jquery';
-
-$(document).ready( () => {
-
-	/**
-	 * move screen after pressing .arrow
-	 */
-	$('.first-window > .arrow').on( 'click', () => {
-
-		$('body').animate({
-			scrollTop: $(window).height() + 300,
-		}, 1000);
-
-	});
+(() => {
 
 	/**
 	 * calculate how many days remains
@@ -38,7 +25,7 @@ $(document).ready( () => {
 	}
 	 */
 
-});
+})();
 
 window.onload = () => {
 
@@ -57,19 +44,13 @@ window.onload = () => {
 	 * target on DOM
 	 */
 	const target = {
-		arrow: document.querySelector('.first-window > .arrow'),
 		quote: document.querySelector('.quote-wrapper'),
-		section: document.querySelector('.section-title'),
+		section: document.querySelectorAll('.section-title'),
 	};
 
 	window.addEventListener( 'scroll', (e) => {
 
 		const scrollNow = e.currentTarget.pageYOffset;
-
-		/**
-		 * simply show/hide arrow in first window
-		 */
-		target.arrow.setAttribute( 'style', `opacity: ${scrollNow > windowH * 0.5 ? 0 : 1}` );
 
 		/**
 		 * show section-title of `About me`
@@ -94,7 +75,7 @@ window.onload = () => {
 		 */
 		if( !target.section[1].classList.contains('-show') && scrollNow >= topOf.portfolio - windowH * 0.6 ) {
 
-			target.section[1].addClass('-show');
+			target.section[1].classList.add('-show');
 
 		}
 
