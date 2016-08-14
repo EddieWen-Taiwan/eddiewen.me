@@ -2,8 +2,11 @@
 	text-align: center;
 	margin: 80px auto;
 
-	> img {
+	> .rect {
+		display: inline-block;
 		width: 20px;
+		height: 20px;
 		margin: 0px 30px;
+		background-image: url(../../images/divider-pic.png);
 	}
 }
