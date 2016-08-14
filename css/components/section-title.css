@@ -8,8 +8,8 @@
 	width: 66%;
 }
 
-.section-title::before,
-.section-title::after {
+.section-title:before,
+.section-title:after {
 	content: '';
 	display: block;
 
@@ -21,8 +21,8 @@
 	transition: all 1.7s;
 }
 
-.section-title.-show::before,
-.section-title.-show::after {
+.section-title.-show:before,
+.section-title.-show:after {
 	width: 100%;
 }
 

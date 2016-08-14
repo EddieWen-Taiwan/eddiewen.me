@@ -16,7 +16,7 @@
 	margin-bottom: 15px;
 }
 
-.time-period > .time::before {
+.time-period > .time:before {
 	content: "# ";
 }
 

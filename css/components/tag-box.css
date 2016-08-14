@@ -17,14 +17,14 @@
 	letter-spacing: 1px;
 }
 
-.tag-box > .tag::before {
+.tag-box > .tag:before {
 	content: "#";
 }
 
-.tag-box > .tag::after {
+.tag-box > .tag:after {
 	content: " / ";
 }
 
-.tag-box > .tag:last-child::after {
+.tag-box > .tag:last-child:after {
 	content: "";
 }

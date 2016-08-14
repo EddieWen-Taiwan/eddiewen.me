@@ -2,8 +2,7 @@
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-/* FONT PATH
- * -------------------------- */
+
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -18,7 +17,7 @@
 	font-size: inherit;
 	text-rendering: auto;
 	-moz-osx-font-smoothing: grayscale;
-	 -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 .fa-quote-left:before {

@@ -1,17 +1,12 @@
-require('css/reset');
-/**
- * require 'css/*.css'
- */
+import 'css/reset';
+/* eslint-disable */
 const req = require.context('css/components', true, /^(.*\.(css$))[^.]*$/igm);
-req.keys().forEach( (key) => {
-
-	req(key);
-
-});
-require('css/animate');
-require('css/font-awesome');
-require('css/helpers');
-require('css/responsive');
+req.keys().forEach( (key) => req(key) );
+/* eslint-enable */
+import 'css/animate';
+import 'css/font-awesome';
+import 'css/helpers';
+import 'css/responsive';
 
 import $ from 'jquery';
 
