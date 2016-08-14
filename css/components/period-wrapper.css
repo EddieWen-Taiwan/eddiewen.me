@@ -8,21 +8,21 @@
 
 .time-period {
 	margin: 100px 0px;
-}
 
-.time-period > .time {
-	font-size: 20px;
-	color: #333;
-	margin-bottom: 15px;
-}
+	> .time {
+		font-size: 20px;
+		color: #333;
+		margin-bottom: 15px;
 
-.time-period > .time:before {
-	content: "# ";
-}
+		&:before {
+			content: '# ';
+		}
+	}
 
-.time-period > .think {
-	color: #666;
-	letter-spacing: 1px;
-	line-height: 24px;
-	margin-left: 30px;
+	> .think {
+		color: #666;
+		letter-spacing: 1px;
+		line-height: 24px;
+		margin-left: 30px;
+	}
 }

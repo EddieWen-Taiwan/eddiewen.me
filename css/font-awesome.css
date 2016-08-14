@@ -21,21 +21,21 @@
 }
 
 .fa-quote-left:before {
-	content: "\f10d";
+	content: '\f10d';
 }
 
 .fa-pinterest-p:before {
-	content: "\f231";
+	content: '\f231';
 }
 
 .fa-github:before {
-	content: "\f09b";
+	content: '\f09b';
 }
 
 .fa-medium:before {
-	content: "\f23a";
+	content: '\f23a';
 }
 
 .fa-facebook:before {
-	content: "\f09a";
+	content: '\f09a';
 }
