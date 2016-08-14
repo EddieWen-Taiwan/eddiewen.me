@@ -46,3 +46,16 @@ footer {
 		color: white;
 	}
 }
+
+@media screen and ( max-width: 960px ) {
+
+	.link-wrapper .link {
+		&.-pinterest:hover,
+		&.-github:hover,
+		&.-medium:hover,
+		&.-fb:hover {
+			background-color: inherit;
+		}
+	}
+
+}
