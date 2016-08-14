@@ -164,3 +164,46 @@
 		background-position: -260px -500px;
 	}
 }
+
+@media screen and ( max-width: 960px ) {
+
+	.grid-wrapper {
+		width: 90%;
+	}
+
+	.per-grid {
+		> .hey_bu {
+			opacity: 1;
+			height: 20%;
+			top: auto;
+			bottom: 0px;
+		}
+
+		&:hover {
+			> .fakeborder.-top,
+			> .fakeborder.-bottom,
+			> .fakeborder.-right,
+			> .fakeborder.-left {
+				width: 0px;
+				height: 0px;
+			}
+		}
+	}
+
+}
+
+@media screen and ( max-width: 720px ) {
+
+	.per-grid {
+		margin: 0px calc( (100% - 400px) / 4 ) 100px;
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.per-grid {
+		margin: 0px calc( (100% - 200px) / 2 ) 100px;
+	}
+
+}

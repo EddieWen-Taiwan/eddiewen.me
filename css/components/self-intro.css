@@ -28,3 +28,26 @@
 .content-width > .self-intro {
 	width: 100%;
 }
+
+@media screen and ( max-width: 960px ) {
+
+	.self-intro {
+		> .per {
+			height: 60px;
+		}
+
+		> .conclusion {
+			margin-top: 70px;
+		}
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.self-intro > .per {
+		width: 90%;
+		margin-top: 60px;
+	}
+
+}

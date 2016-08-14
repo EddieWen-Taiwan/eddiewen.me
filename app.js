@@ -6,7 +6,6 @@ req.keys().forEach( (key) => req(key) );
 import 'css/animate';
 import 'css/font-awesome';
 import 'css/helpers';
-import 'css/responsive';
 
 (() => {
 
@@ -48,9 +47,11 @@ window.onload = () => {
 		section: document.querySelectorAll('.section-title'),
 	};
 
+	let scrollNow = 0;
+
 	window.addEventListener( 'scroll', (e) => {
 
-		const scrollNow = e.currentTarget.pageYOffset;
+		scrollNow = e.currentTarget.pageYOffset;
 
 		/**
 		 * show section-title of `About me`
