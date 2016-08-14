@@ -6,9 +6,7 @@
 	> .myname {
 		font-size: 120px;
 		font-weight: 700;
-		color: white;
 		letter-spacing: 3px;
-		transition: all 2s;
 		animation-name: nameColor;
 		animation-duration: 3s;
 	}

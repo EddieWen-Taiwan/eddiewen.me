@@ -40,41 +40,64 @@ $(document).ready( () => {
 
 });
 
-$(window).load( () => {
+window.onload = () => {
 
-	const windowH = $(window).height();
+	const windowH = window.innerHeight;
 
-	const aboutTop = $('.white-section.-about').offset().top;
-	const quoteTop = $('.white-section.-about .quote-wrapper').offset().top;
-	const portfolioTop = $('.white-section.-portfolio').offset().top;
+	/**
+	 * target height
+	 */
+	const topOf = {
+		about: document.querySelector('.white-section.-about').offsetTop,
+		quote: document.querySelector('.quote-wrapper').offsetTop,
+		portfolio: document.querySelector('.white-section.-portfolio').offsetTop,
+	};
 
-	$(window).scroll( () => {
+	/**
+	 * target on DOM
+	 */
+	const target = {
+		arrow: document.querySelector('.first-window > .arrow'),
+		quote: document.querySelector('.quote-wrapper'),
+		section: document.querySelector('.section-title'),
+	};
 
-		const scrollNow = $(window).scrollTop();
+	window.addEventListener( 'scroll', (e) => {
 
-		$('.first-window > .arrow').css( 'opacity', ( scrollNow >= windowH * 0.5 ) ? '0' : '1' );
+		const scrollNow = e.currentTarget.pageYOffset;
 
-		if( !$('.white-section.-about > .section-title').hasClass('-show')
-			&& scrollNow >= aboutTop - windowH * 0.6 ) {
+		/**
+		 * simply show/hide arrow in first window
+		 */
+		target.arrow.setAttribute( 'style', `opacity: ${scrollNow > windowH * 0.5 ? 0 : 1}` );
 
-			$('.white-section.-about > .section-title').addClass('-show');
+		/**
+		 * show section-title of `About me`
+		 */
+		if( !target.section[0].classList.contains('-show') && scrollNow >= topOf.about - windowH * 0.6 ) {
+
+			target.section[0].classList.add('-show');
 
 		}
 
-		if( !$('.white-section.-about .quote-wrapper').hasClass('bounceInRight')
-			&& scrollNow >= quoteTop - windowH * 0.6 ) {
+		/**
+		 * show quote - `write the code, change the world`
+		 */
+		if( !target.quote.classList.contains('bounceInRight') && scrollNow >= topOf.quote - windowH * 0.6 ) {
 
-			$('.white-section.-about .quote-wrapper').addClass('_animated bounceInRight');
+			target.quote.classList.add('bounceInRight');
 
 		}
 
-		if( !$('.white-section.-portfolio > .section-title').hasClass('-show')
-			&& scrollNow >= portfolioTop - windowH * 0.6 ) {
+		/**
+		 * show section-title of `Portfolio`
+		 */
+		if( !target.section[1].classList.contains('-show') && scrollNow >= topOf.portfolio - windowH * 0.6 ) {
 
-			$('.white-section.-portfolio > .section-title').addClass('-show');
+			target.section[1].addClass('-show');
 
 		}
 
 	});
 
-});
+};
