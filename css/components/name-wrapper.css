@@ -1,0 +1,60 @@
+.name-wrapper {
+	width: 70%;
+	margin: 0px auto;
+	text-align: center;
+
+	> .myname {
+		font-size: 120px;
+		font-weight: 700;
+		letter-spacing: 3px;
+		animation-name: nameColor;
+		animation-duration: 3s;
+	}
+}
+
+@keyframes nameColor {
+	from, 34% {
+		color: white;
+	}
+	to {
+		color: #404040;
+	}
+}
+
+@media screen and ( max-width: 960px ) {
+
+	.name-wrapper > .myname {
+		font-size: 80px;
+	}
+
+}
+
+@media screen and ( max-width: 720px ) {
+
+	.name-wrapper {
+		width: 80%;
+
+		> .myname {
+			font-size: 60px;
+		}
+
+		> .tag-box {
+			width: 75%;
+		}
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.name-wrapper {
+		> .myname {
+			font-size: 40px;
+		}
+
+		> .tag-box {
+			width: 95%;
+		}
+	}
+
+}

@@ -1,0 +1,44 @@
+.period-wrapper {
+	margin: 0px auto;
+}
+
+.content-width > .period-wrapper {
+	width: 74%;
+}
+
+.time-period {
+	margin: 100px 0px;
+
+	> .time {
+		font-size: 20px;
+		color: #333;
+		margin-bottom: 15px;
+
+		&:before {
+			content: '# ';
+		}
+	}
+
+	> .think {
+		color: #666;
+		letter-spacing: 1px;
+		line-height: 24px;
+		margin-left: 30px;
+	}
+}
+
+@media screen and ( max-width: 960px ) {
+
+	.content-width > .period-wrapper {
+		width: 100%;
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.time-period > .think {
+		margin-left: 0px;
+	}
+
+}

@@ -1,0 +1,30 @@
+.quote-wrapper {
+	opacity: 0;
+	animation-duration: .7s;
+
+	> .quote {
+		font-size: 20px;
+		color: #707070;
+
+		> i {
+			font-size: 36px;
+			margin-right: 20px;
+			color: #EA526F;
+		}
+	}
+
+	> .thinking {
+		width: 80%;
+		margin: 50px auto;
+		letter-spacing: 1px;
+		line-height: 30px;
+	}
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.quote-wrapper > .thinking {
+		width: 90%;
+	}
+
+}

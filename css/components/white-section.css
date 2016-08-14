@@ -1,0 +1,32 @@
+.white-section {
+	background-color: white;
+
+	> .content-width {
+		width: 66%;
+		margin: 80px auto 200px;
+	}
+}
+
+@media screen and ( max-width: 960px ) {
+
+	.white-section > .content-width {
+		width: 78%;
+	}
+
+}
+
+@media screen and ( max-width: 720px ) {
+
+	.white-section > .content-width {
+		width: 90%;
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.white-section > .content-width {
+		width: 94%;
+	}
+
+}

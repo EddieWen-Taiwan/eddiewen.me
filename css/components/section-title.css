@@ -1,0 +1,47 @@
+.section-title {
+	text-align: center;
+	margin: 0px auto;
+	padding: 100px 0px 50px;
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		width: 0px;
+		height: 1px;
+		margin: 0px auto;
+		background-color: #C9C9C9;
+		transition: all 1.7s;
+	}
+
+	> .text {
+		color: white;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		transition: all 1.7s;
+	}
+
+	&.-show {
+		&:before,
+		&:after {
+			width: 100%;
+		}
+
+		> .text {
+			color: #404040;
+		}
+	}
+}
+
+.white-section > .section-title {
+	width: 66%;
+}
+
+@media screen and ( max-width: 720px ) {
+
+	.white-section > .section-title {
+		width: 76%;
+	}
+
+}

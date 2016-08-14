@@ -1,0 +1,28 @@
+.tag-box {
+	margin: 0px auto;
+	margin-top: 20px;
+
+	animation-name: tagsFadeIn;
+	animation-duration: 2.5s;
+
+	> .tag {
+		color: #707070;
+		letter-spacing: 1px;
+
+		&:before {
+			content: '#';
+		}
+
+		&:after {
+			content: ' / ';
+		}
+
+		&:last-child:after {
+			content: '';
+		}
+	}
+}
+
+.name-wrapper > .tag-box {
+	width: 55%;
+}

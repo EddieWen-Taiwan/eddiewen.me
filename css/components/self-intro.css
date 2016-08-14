@@ -1,0 +1,53 @@
+.self-intro {
+	margin: 0px auto;
+
+	> .per {
+		width: 40%;
+		margin: 100px 5% 0px;
+		letter-spacing: 3px;
+		color: #303030;
+	}
+
+	> .conclusion {
+		margin-top: 100px;
+		letter-spacing: 3px;
+		font-size: 24px;
+		font-weight: 600;
+		color: #333;
+
+		&.-head {
+			text-align: left;
+		}
+
+		&.-end {
+			text-align: right;
+		}
+	}
+}
+
+.content-width > .self-intro {
+	width: 100%;
+}
+
+@media screen and ( max-width: 960px ) {
+
+	.self-intro {
+		> .per {
+			height: 60px;
+		}
+
+		> .conclusion {
+			margin-top: 70px;
+		}
+	}
+
+}
+
+@media screen and ( max-width: 480px ) {
+
+	.self-intro > .per {
+		width: 90%;
+		margin-top: 60px;
+	}
+
+}

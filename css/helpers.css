@@ -1,0 +1,26 @@
+@import url('//fonts.googleapis.com/css?family=Ubuntu');
+
+._title-font {
+	font-family: 'Ubuntu';
+}
+
+._f-left {
+	float: left;
+}
+
+@media screen and ( max-width: 480px ) {
+
+	._f-left {
+		float: none;
+	}
+
+}
+
+._v-mid {
+	display: flex;
+	align-items: center;
+}
+
+._clear {
+	clear: both;
+}

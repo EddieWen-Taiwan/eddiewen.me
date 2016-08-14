@@ -1,0 +1,130 @@
+//-
+//- EEEEEEEEEEEE             DDD             DDD
+//- EEEEEEEEEEEE             DDD             DDD     II
+//- EEEE                     DDD             DDD
+//- EEEE                     DDD             DDD
+//- EEEEEEEEEEEE    DDDDDDDDDDDD    DDDDDDDDDDDD    IIII	 EEEEEEEEEE
+//- EEEEEEEEEEEE    DDDDDDDDDDDD    DDDDDDDDDDDD    IIII	EEE      EEE
+//- EEEE            DDD      DDD    DDD      DDD    IIII	EEE      EEE
+//- EEEE            DDD      DDD    DDD      DDD    IIII	EEEEEEEEEEEE
+//- EEEEEEEEEEEE    DDDDDDDDDDDD    DDDDDDDDDDDD    IIII	EEE
+//- EEEEEEEEEEEE    DDDDDDDDDDDD    DDDDDDDDDDDD    IIII     EEEEEEEEEE
+
+
+//- WWWW            WWWW
+//- WWWW    WWWW    WWWW
+//- WWWW    WWWW    WWWW
+//- WWWW    WWWW    WWWW
+//- WWWW    WWWW    WWWW     EEEEEEEEEE     NN  NNNNNN
+//- WWWW    WWWW    WWWW    EEE      EEE    NN NNNNNNNN
+//- WWWW    WWWW    WWWW    EEE      EEE    NNNNN  NNNNN
+//-  WWWW WWWWWWWW WWWW     EEEEEEEEEEEE    NNNN    NNNN
+//-   WWWWWWW  WWWWWWW      EEE             NNNN    NNNN
+//-    WWWWW    WWWWW        EEEEEEEEEE     NNNN    NNNN    from TAIWAN
+//-
+
+doctype html
+html
+
+	include ./includes/head.pug
+
+	body
+
+		include ./mixins.pug
+
+		.first-window._v-mid
+
+			.name-wrapper
+				span.myname._title-font._animated Eddie Wen
+				.tag-box._animated
+					span.tag Male
+					span.tag 23
+					span.tag HsinChu
+					span.tag HCHS
+					span.tag Taipei
+					span.tag NCCU
+					span.tag 25sprout
+					span.tag Internship
+					span.tag SMS
+					span.tag Developer
+
+		.pic-banner
+
+		.white-section.-about
+			.section-title
+				h2.text._title-font About me
+
+			.content-width
+
+				.sub-title
+					| 溫奕書，23歲，新竹人
+					br
+					| 剛結束最後一段學生時光。
+
+				.self-intro
+					.conclusion.-head 我不是誰，
+					.per._f-left 是個小時候沒被強迫帶去才藝班但長大後卻非常希望自己會彈鋼琴的男生。
+					.per._f-left 是個國小時曾被同學在玩的石頭砸到腦震盪，成為名符其實的＿＿。
+					.per._f-left 是個能夠在程式語言中找到樂趣，與之為伍，甚至廢寢忘食的開發者。
+					.per._f-left 是個喜歡慢跑，並趁機放空自己、好好享受一段不用大腦的時刻。
+					.per._f-left 是個雖然常常不小心脫口出髒話但其實心地善良愛好小動物的Ｕ質國民。
+					br._clear
+
+					.conclusion.-end 但誰也不是我。
+
+				.pic-divider
+					- for( var i = 0; i < 3; i++ )
+						.rect
+
+				.sub-title Timeline
+
+				.period-wrapper
+					.time-period
+						.time 1993/07
+						.think 沒錯！我就是在這個兵役一改再改的悲慘 1993 夏日出生。不過列出來的主要目的當然是感謝爸媽生我育我&#62&#60 但現在唯一能做的就是把你們放在我的網頁上XD
+					.time-period
+						.time 卡其色的日子
+						.think 比起國中國小除了唸書以外就不知道還做了什麼的日子，在竹中的三年絕對是一輩子影響我最深也最有意義的三年了。皮帶、吊嘎、拖鞋、教官、跑山、園遊會、惠他、原生社、搶便當、誠慧健毅，謝謝，竹中。 --- 710552
+					.time-period
+						.time 黨校不意外
+						.think 在指考機器的決定下我進了政大資管，連這能吃嗎都不知道的情況下當然不知道自己該學些什麼，一下覺得程式好像很酷，一下又覺得好像學商比較有錢途，誰知道在三下時開關就被打開了，就再也離不開程式語言了XD
+					.time-period
+						.time 25sprout
+						.think 全台灣最棒的網路公司....(又在打廣告XD)，擔任網頁前/後端實習生，辦公室唯三的瑜珈球一顆在我屁股下。
+
+				.pic-divider
+					- for( var i = 0; i < 3; i++ )
+						.rect
+
+				.quote-wrapper._animated
+					.quote
+						i.fa.fa-quote-left
+						| Write the code, change the world.
+					.thinking
+						| 第一次看到這句話是在蘋果 2014 年的 WWDC 上，大大的一行字掛在那。當下只想到「 wow! 這的確是蘋果能夠說出來的話。 」畢竟他們的確 change the world 了。在尚未接觸程式之前，真是難以想像這群 write the code 的 _____，居然能夠坐在電腦前面，十根手指頭在那達達達地敲打鍵盤，就能夠創造出顛覆世界現狀的各種可能。雖然目前距離這句話連W都還沒一撇，但這句話大概就是所有開發者的夢想吧。
+
+		.pic-banner.-fixed._v-mid
+			.text
+				h1 Programming
+				h4 is the greatest magic in the world.
+
+		.white-section.-portfolio
+			.section-title
+				h2.text._title-font Portfolio
+
+			.grid-wrapper
+
+				+pj-grid('//eddiewen.me/WeConnect/', 'WECONNECT')
+				+pj-grid('colorspeed', 'COLORSPEED')
+				+pj-grid('//www.asus.com/AllinOne_PCs/ET2040INK/', 'ASUS ET2040')
+				+pj-grid('//github.com/EddieWen-Taiwan/Fallwall.js', 'FALLWALL.JS')
+				+pj-grid('//github.eddiewen.me/windowSize/', 'WINDOWSIZE')
+				+pj-grid('//github.com/EddieWen-Taiwan/TypeWriting.js', 'TYPEWRITING.JS')
+				+pj-grid('//smscount.lol', '阿替倒數中')
+				+pj-grid('//github.com/EddieWen-Taiwan/React-Days', 'React-Days')
+
+		include ./includes/footer.pug
+
+		script(src='assets/bundle.min.js')
+
+		include ./includes/ga.pug
