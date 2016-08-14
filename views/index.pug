@@ -30,6 +30,8 @@ html
 
 	body
 
+		include ./mixins.pug
+
 		.first-window._v-mid
 
 			.name-wrapper
@@ -62,16 +64,11 @@ html
 
 				.self-intro
 					.conclusion.-head 我不是誰，
-					.per._f-left
-						span 是個小時候沒被強迫帶去才藝班但長大後卻非常希望自己會彈鋼琴的男生。
-					.per._f-left
-						span 是個國小時曾被同學在玩的石頭砸到腦震盪，成為名符其實的＿＿。
-					.per._f-left
-						span 是個能夠在程式語言中找到樂趣，與之為伍，甚至廢寢忘食的開發者。
-					.per._f-left
-						span 是個喜歡慢跑，並趁機放空自己、好好享受一段不用大腦的時刻。
-					.per._f-left
-						span 是個雖然常常不小心脫口出髒話但其實心地善良愛好小動物的Ｕ質國民。
+					.per._f-left 是個小時候沒被強迫帶去才藝班但長大後卻非常希望自己會彈鋼琴的男生。
+					.per._f-left 是個國小時曾被同學在玩的石頭砸到腦震盪，成為名符其實的＿＿。
+					.per._f-left 是個能夠在程式語言中找到樂趣，與之為伍，甚至廢寢忘食的開發者。
+					.per._f-left 是個喜歡慢跑，並趁機放空自己、好好享受一段不用大腦的時刻。
+					.per._f-left 是個雖然常常不小心脫口出髒話但其實心地善良愛好小動物的Ｕ質國民。
 					br._clear
 
 					.conclusion.-end 但誰也不是我。
@@ -117,93 +114,14 @@ html
 
 			.grid-wrapper
 
-				a.per-grid(href='//eddiewen.me/WeConnect/', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name WECONNECT
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='colorspeed/', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name COLORSPEED
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//www.asus.com/AllinOne_PCs/ET2040INK/', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name ASUS ET2040
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//github.com/EddieWen-Taiwan/Fallwall.js', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name FALLWALL.JS
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//github.eddiewen.me/windowSize/', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name WINDOWSIZE
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//github.com/EddieWen-Taiwan/TypeWriting.js', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name TYPEWRITING.JS
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//smscount.lol', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name 阿替倒數中
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
-
-				a.per-grid(href='//github.com/EddieWen-Taiwan/React-Days', target='_blank')
-					.img
-
-					.hey_bu._v-mid
-						.name React-Days
-
-					.fakeborder.-top
-					.fakeborder.-right
-					.fakeborder.-bottom
-					.fakeborder.-left
+				+pj-grid('//eddiewen.me/WeConnect/', 'WECONNECT')
+				+pj-grid('colorspeed', 'COLORSPEED')
+				+pj-grid('//www.asus.com/AllinOne_PCs/ET2040INK/', 'ASUS ET2040')
+				+pj-grid('//github.com/EddieWen-Taiwan/Fallwall.js', 'FALLWALL.JS')
+				+pj-grid('//github.eddiewen.me/windowSize/', 'WINDOWSIZE')
+				+pj-grid('//github.com/EddieWen-Taiwan/TypeWriting.js', 'TYPEWRITING.JS')
+				+pj-grid('//smscount.lol', '阿替倒數中')
+				+pj-grid('//github.com/EddieWen-Taiwan/React-Days', 'React-Days')
 
 		include ./includes/footer.pug
 
