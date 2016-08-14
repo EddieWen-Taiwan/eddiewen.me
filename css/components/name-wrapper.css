@@ -2,28 +2,15 @@
 	width: 70%;
 	margin: 0px auto;
 	text-align: center;
-}
 
-.name-wrapper > .myname {
-	font-size: 120px;
-	font-weight: 700;
-	color: white;
-	letter-spacing: 3px;
-
-	transition: all 2s;
-
-	-webkit-animation-name: nameColor;
-	animation-name: nameColor;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-}
-
-@-webkit-keyframes nameColor {
-	from, 34% {
+	> .myname {
+		font-size: 120px;
+		font-weight: 700;
 		color: white;
-	}
-	to {
-		color: #404040;
+		letter-spacing: 3px;
+		transition: all 2s;
+		animation-name: nameColor;
+		animation-duration: 3s;
 	}
 }
 
