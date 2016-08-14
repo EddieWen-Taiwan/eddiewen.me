@@ -3,9 +3,6 @@ import 'css/reset';
 const req = require.context('css/components', true, /^(.*\.(css$))[^.]*$/igm);
 req.keys().forEach( (key) => req(key) );
 /* eslint-enable */
-import 'css/animate';
-import 'css/font-awesome';
-import 'css/helpers';
 
 (() => {
 

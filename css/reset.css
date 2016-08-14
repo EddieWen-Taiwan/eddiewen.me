@@ -25,6 +25,9 @@
 
 */
 @import url('//fonts.googleapis.com/css?family=Open+Sans');
+@import 'libs/animate';
+@import 'libs/font-awesome';
+@import 'helpers';
 
 body {
 	margin: 0px;
@@ -34,36 +37,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-._f-left {
-	float: left;
-}
-
-@media screen and ( max-width: 480px ) {
-
-	._f-left {
-		float: none;
-	}
-
-}
-
-
 /* .f-right {
 	float: right;
 } */
-
-._clear {
-	clear: both;
-}
 
 /* .stop-scrolling {
 	height: 100%;
 	overflow: hidden;
 } */
-
-._v-mid {
-	display: flex;
-	align-items: center;
-}
 
 :focus {
 	outline: none !important;
