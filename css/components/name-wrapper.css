@@ -17,7 +17,7 @@
 		color: white;
 	}
 	to {
-		color: #404040;
+		color: var(--titleBlack);
 	}
 }
 

@@ -1,4 +1,4 @@
 module.exports = {
-	standard: '#FFCE54',
-	black: '#404040',
+	_standard: '#FFCE54',
+	titleBlack: '#404040',
 };
