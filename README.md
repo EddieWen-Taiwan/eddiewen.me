@@ -5,6 +5,10 @@
 
 ### Change Log
 
+:beer:**Version 2.2**  
+2016/08 程式碼重構。  
+因為最近更新過 [web-starter](https://github.com/EddieWen-Taiwan/web)，就用新的 starter 再次小改版。主要只是 css 跟 html 部分的 source code 有作更動，也改成僅追蹤 `src` 下面的檔案。
+
 :beer:**Version 2.1**  
 2016/05 程式碼重構。  
 畫面呈現上完全沒有改變，這次只是想試試一些開發流程上的工具。
