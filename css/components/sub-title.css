@@ -14,17 +14,13 @@
 }
 
 @media screen and ( max-width: 720px ) {
-
 	.content-width > .sub-title {
 		width: 60%;
 	}
-
 }
 
 @media screen and ( max-width: 480px ) {
-
 	.content-width > .sub-title {
 		width: 88%;
 	}
-
 }

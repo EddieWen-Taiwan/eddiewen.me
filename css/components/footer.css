@@ -48,7 +48,6 @@ footer {
 }
 
 @media screen and ( max-width: 960px ) {
-
 	.link-wrapper .link {
 		&.-pinterest:hover,
 		&.-github:hover,
@@ -57,5 +56,4 @@ footer {
 			background-color: inherit;
 		}
 	}
-
 }

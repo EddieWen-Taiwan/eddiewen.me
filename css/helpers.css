@@ -9,11 +9,9 @@
 }
 
 @media screen and ( max-width: 480px ) {
-
 	._f-left {
 		float: none;
 	}
-
 }
 
 ._v-mid {

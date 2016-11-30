@@ -16,21 +16,19 @@
 	from, 34% {
 		color: white;
 	}
+
 	to {
 		color: var(--titleBlack);
 	}
 }
 
 @media screen and ( max-width: 960px ) {
-
 	.name-wrapper > .myname {
 		font-size: 80px;
 	}
-
 }
 
 @media screen and ( max-width: 720px ) {
-
 	.name-wrapper {
 		width: 80%;
 
@@ -42,11 +40,9 @@
 			width: 75%;
 		}
 	}
-
 }
 
 @media screen and ( max-width: 480px ) {
-
 	.name-wrapper {
 		> .myname {
 			font-size: 40px;
@@ -56,5 +52,4 @@
 			width: 95%;
 		}
 	}
-
 }

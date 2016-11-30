@@ -39,9 +39,7 @@
 }
 
 @media screen and ( max-width: 720px ) {
-
 	.white-section > .section-title {
 		width: 76%;
 	}
-
 }

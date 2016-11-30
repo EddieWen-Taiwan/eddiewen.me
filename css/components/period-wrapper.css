@@ -28,17 +28,13 @@
 }
 
 @media screen and ( max-width: 960px ) {
-
 	.content-width > .period-wrapper {
 		width: 100%;
 	}
-
 }
 
 @media screen and ( max-width: 480px ) {
-
 	.time-period > .think {
 		margin-left: 0px;
 	}
-
 }

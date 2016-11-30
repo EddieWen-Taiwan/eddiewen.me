@@ -22,9 +22,7 @@
 }
 
 @media screen and ( max-width: 480px ) {
-
 	.quote-wrapper > .thinking {
 		width: 90%;
 	}
-
 }
