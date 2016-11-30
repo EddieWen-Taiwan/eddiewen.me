@@ -1,4 +1,4 @@
-import 'css/reset';
+import './css/reset.css';
 /* eslint-disable */
 const req = require.context('css/components', true, /^(.*\.(css$))[^.]*$/igm);
 req.keys().forEach( (key) => req(key) );
@@ -53,7 +53,7 @@ window.onload = () => {
 		/**
 		 * show section-title of `About me`
 		 */
-		if( !target.section[0].classList.contains('-show') && scrollNow >= topOf.about - windowH * 0.6 ) {
+		if( !target.section[0].classList.contains('-show') && scrollNow >= topOf.about - (windowH * 0.6) ) {
 
 			target.section[0].classList.add('-show');
 
@@ -62,7 +62,7 @@ window.onload = () => {
 		/**
 		 * show quote - `write the code, change the world`
 		 */
-		if( !target.quote.classList.contains('bounceInRight') && scrollNow >= topOf.quote - windowH * 0.6 ) {
+		if( !target.quote.classList.contains('bounceInRight') && scrollNow >= topOf.quote - (windowH * 0.6) ) {
 
 			target.quote.classList.add('bounceInRight');
 
@@ -71,7 +71,7 @@ window.onload = () => {
 		/**
 		 * show section-title of `Portfolio`
 		 */
-		if( !target.section[1].classList.contains('-show') && scrollNow >= topOf.portfolio - windowH * 0.6 ) {
+		if( !target.section[1].classList.contains('-show') && scrollNow >= topOf.portfolio - (windowH * 0.6) ) {
 
 			target.section[1].classList.add('-show');
 
