@@ -25,9 +25,9 @@
 
 */
 @import url('//fonts.googleapis.com/css?family=Open+Sans');
-@import 'libs/animate';
-@import 'libs/font-awesome';
-@import 'helpers';
+@import './libs/animate.css';
+@import './libs/font-awesome.css';
+@import './helpers.css';
 
 body {
 	margin: 0px;

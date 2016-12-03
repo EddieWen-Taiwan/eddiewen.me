@@ -1,7 +1,20 @@
 import './css/reset.css';
+
+import './css/components/first-window.css';
+import './css/components/name-wrapper.css';
+import './css/components/tag-box.css';
+import './css/components/pic-banner.css';
+import './css/components/white-section.css';
+import './css/components/section-title.css';
+import './css/components/sub-title.css';
+import './css/components/self-intro.css';
+import './css/components/period-wrapper.css';
+import './css/components/quote-wrapper.css';
+import './css/components/grid-wrapper.css';
+import './css/components/footer.css';
 /* eslint-disable */
-const req = require.context('css/components', true, /^(.*\.(css$))[^.]*$/igm);
-req.keys().forEach( (key) => req(key) );
+// const req = require.context('./css/components', true, /^(.*\.(css$))[^.]*$/igm);
+// req.keys().forEach((key)=>req(key));
 /* eslint-enable */
 
 (() => {
