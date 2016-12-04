@@ -8,6 +8,7 @@ import './css/components/white-section.css';
 import './css/components/section-title.css';
 import './css/components/sub-title.css';
 import './css/components/self-intro.css';
+import './css/components/pic-divider.css';
 import './css/components/period-wrapper.css';
 import './css/components/quote-wrapper.css';
 import './css/components/grid-wrapper.css';
