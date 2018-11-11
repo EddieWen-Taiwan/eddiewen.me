@@ -13,29 +13,6 @@ import './css/components/period-wrapper.css';
 import './css/components/quote-wrapper.css';
 import './css/components/grid-wrapper.css';
 import './css/components/footer.css';
-/* eslint-disable */
-// const req = require.context('./css/components', true, /^(.*\.(css$))[^.]*$/igm);
-// req.keys().forEach((key)=>req(key));
-/* eslint-enable */
-
-(() => {
-
-	/**
-	 * calculate how many days remains
-	 * delete this after 2016/05/27
-	 */
-	/*
-	const today = new Date();
-	const FINAL_DAY = new Date('2016/05/27');
-	const MS_PER_DAY = 24 * 60 * 60 * 1000;
-
-	const damnDayLeft = ( FINAL_DAY.getTime() - today.getTime() ) / MS_PER_DAY;
-	if( damnDayLeft > 0 ) {
-		$('.damn').text(`還有 ${Math.floor(damnDayLeft+1)} 天登出`);
-	}
-	 */
-
-})();
 
 window.onload = () => {
 
