@@ -1,6 +1,6 @@
-# [eddiewen.me](http://eddiewen.me)
+# [eddiewen.me](https://eddiewen.me)
 
-嗨，我是溫奕書，Eddie Wen。  
+嗨，我是温奕書，Eddie Wen。
 這是我的個人網站程式碼，想把這邊做成網站的修改紀錄，雖然改版一次到 2.0 之後，現在就無心再動手了lol
 
 ### Change Log
